@@ -11,9 +11,10 @@ Three programs need to be run sequentially:
 Additional key programs generate small random N-K Kauffman networks and analyze them. This includes:
 1. generateKauffmanNetworks_v03.py
 2. generateCanalizingNetworks.py
+These programs use the Python library canalizing_function_toolbox_v13, available from [https://github.com/ckadelka/DesignPrinciplesGeneNetworks](https://github.com/ckadelka/DesignPrinciplesGeneNetworks).
 
 # PrepareModelsForSimulation_v4.py
-This program loads all published expert-curated Boolean network models from a recent meta-analysis, whose nodes have a predefined maximal in-degree (10 used in the paper; to avoid an exponential increase in run time) The models are stored in a list of folders, as text files in a standardized format:
+This program loads all published expert-curated Boolean network models from a recent [meta-analysis](https://www.science.org/doi/full/10.1126/sciadv.adj0822), whose nodes have a predefined maximal in-degree (10 used in the paper; to avoid an exponential increase in run time) The models are stored in a list of folders, as text files in a standardized format:
 ```text
 A = B OR C
 B = A OR (C AND D)
@@ -29,7 +30,7 @@ For each biological network, this program generates three different sets of rand
 Ideally, this program is run in parallel on some HPC infrastructure. We used the shell script bash_v4_unix.sh to run it on the Iowa State HPC cluster Pronto.
 
 # SimulateModels_v4.py
-This program, using the Python libraries torch and boolion, simulates the biological networks as well as the corresponding random null models, both the Boolean versions and continuous extensions of the Boolean networks of various degree. 
+This program, using the Python libraries torch and [boolion](https://gitlab.com/smanicka/boolion), simulates the biological networks as well as the corresponding random null models, both the Boolean versions and continuous extensions of the Boolean networks of various degree. 
 
 Ideally, this program is run in parallel on some HPC infrastructure. We used the shell script bash_v4_step2_unix.sh to run it on the Iowa State HPC cluster Pronto.
 
