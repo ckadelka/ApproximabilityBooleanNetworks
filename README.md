@@ -9,8 +9,8 @@ Three programs need to be run sequentially:
 3. AnalyzeSimulationData_v4b.py.
 
 Additional key programs generate small random N-K Kauffman networks and analyze them. This includes:
-4. generateKauffmanNetworks_v03.py
-5. generateCanalizingNetworks.py
+1. generateKauffmanNetworks_v03.py
+2. generateCanalizingNetworks.py
 
 # PrepareModelsForSimulation_v4.py
 This program loads all published expert-curated Boolean network models from a recent meta-analysis, whose nodes have a predefined maximal in-degree (10 used in the paper; to avoid an exponential increase in run time) The models are stored in a list of folders, as text files in a standardized format:
