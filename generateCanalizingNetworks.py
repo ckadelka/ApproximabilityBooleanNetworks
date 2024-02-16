@@ -12,7 +12,7 @@ import numpy as np
 import itertools
 import matplotlib.pyplot as plt
 
-import canalizing_function_toolbox_v1_9 as can
+import canalizing_function_toolbox_v13 as can
 from boolionnet import boolionnet
 import torch
 
