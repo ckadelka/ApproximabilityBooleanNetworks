@@ -11,7 +11,8 @@ Three programs need to be run sequentially:
 Additional key programs generate small random N-K Kauffman networks and analyze them. This includes:
 1. generateKauffmanNetworks_v03.py
 2. generateCanalizingNetworks.py
-These programs use the Python library canalizing_function_toolbox_v13, available from [https://github.com/ckadelka/DesignPrinciplesGeneNetworks](https://github.com/ckadelka/DesignPrinciplesGeneNetworks).
+
+These two programs use the Python library canalizing_function_toolbox_v13, available from [https://github.com/ckadelka/DesignPrinciplesGeneNetworks](https://github.com/ckadelka/DesignPrinciplesGeneNetworks).
 
 # PrepareModelsForSimulation_v4.py
 This program loads all published expert-curated Boolean network models from a recent [meta-analysis](https://www.science.org/doi/full/10.1126/sciadv.adj0822), whose nodes have a predefined maximal in-degree (10 used in the paper; to avoid an exponential increase in run time) The models are stored in a list of folders, as text files in a standardized format:
