@@ -4,7 +4,7 @@ A pipeline to compute the nonlinearity in regulation of Boolean biological netwo
 This repository contains all code to perform the analyses described in the paper "Canalization reduces the nonlinearity of regulation in biological networks", available at [https://arxiv.org/abs/2402.09703](https://arxiv.org/abs/2402.09703).
 
 Three programs need to be run sequentially:
-1. PrepareModelsForSimulation_v4.py, this is ideally run in parallel on some HPC infrastructure. We used the 
+1. PrepareModelsForSimulation_v4.py, 
 2. SimulateModels_v4.py, and
 3. AnalyzeSimulationData_v4b.py.
 
